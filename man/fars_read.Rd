@@ -18,7 +18,7 @@ the argument of the function
 If file does not exist in the current working directory, then the function will give error.
 }
 \examples{
-fars_read(filename = "accident_1992.csv.bz2")
+fars_read(filename = "accident_2014.csv.bz2")
 
 }
 
