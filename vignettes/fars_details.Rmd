@@ -63,7 +63,7 @@ Input : years A list/vector containing years
 Output : This function returns a dataframe which contains two columns, month and year
  
 Examples : 
-fars_read_years(years = c(2012,2013,2014))
+fars_read_years(years = c(2013,2014,2015))
 ```
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -92,7 +92,7 @@ Output : This function returns a dataframe which contains year and corresponding
 total entries, group by year and month
  
 Examples : 
-fars_summarize_years(years = c(2012,2013,2014))
+fars_summarize_years(years = c(2013,2014,2015))
 ```
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
