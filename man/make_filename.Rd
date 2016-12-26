@@ -17,7 +17,7 @@ This function creates a filename for a particular year, which can be modified in
 the code by changing \code{year}
 }
 \examples{
-make_filename(year = 1994)
+make_filename(year = 2014)
 
 }
 
