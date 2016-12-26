@@ -20,7 +20,7 @@ Input : filename A character string which is the name of the file
 Output : This function returns a data frame
 
 Examples : 
-fars_read(filename = "accident_1992.csv.bz2")
+fars_read(filename = "accident_2014.csv.bz2")
 ```
 fars_read <- function(filename) {
         if(!file.exists(filename))
@@ -43,7 +43,7 @@ Input : year A integer which depicts the year
 Output : This function returns a charcter string which is the name of the file
  
 Examples : 
-make_filename(year = 1994)
+make_filename(year = 2014)
 ```
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -63,7 +63,7 @@ Input : years A list/vector containing years
 Output : This function returns a dataframe which contains two columns, month and year
  
 Examples : 
-fars_read_years(years = c(1992,1993,1994))
+fars_read_years(years = c(2012,2013,2014))
 ```
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -92,7 +92,7 @@ Output : This function returns a dataframe which contains year and corresponding
 total entries, group by year and month
  
 Examples : 
-fars_summarize_years(years = c(1992,1993,1994))
+fars_summarize_years(years = c(2012,2013,2014))
 ```
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
@@ -114,7 +114,7 @@ If wrong state code is given, then it will raise error
 Input : state.num A integer id of a state, year A integer which depicts the year
  
 Examples : 
-fars_map_state(state.num = 12, year = 1994)
+fars_map_state(state.num = 12, year = 2014)
 ```
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
