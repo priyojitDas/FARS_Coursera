@@ -20,8 +20,5 @@ If wrong state code is given, then it will raise error
 
 If wrong state code is given, then it will raise error
 }
-\examples{
-fars_map_state(state.num = 12, year = 2014)
 
-}
 
