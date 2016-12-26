@@ -13,7 +13,7 @@ require(roxygen2)
 #' @importFrom dplyr tbl_df
 #' 
 #' @examples
-#' fars_read(filename = "accident_1992.csv.bz2")
+#' fars_read(filename = "accident_2014.csv.bz2")
 #' 
 #' @export
 fars_read <- function(filename) {
@@ -35,7 +35,7 @@ fars_read <- function(filename) {
 #' @return This function returns a charcter string which is the name of the file
 #' 
 #' @examples
-#' make_filename(year = 1994)
+#' make_filename(year = 2014)
 #' 
 #' @export
 make_filename <- function(year) {
@@ -56,7 +56,7 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select
 #' 
 #' @examples
-#' fars_read_years(years = c(1992,1993,1994))
+#' fars_read_years(years = c(2012,2013,2014))
 #' 
 #' @export
 fars_read_years <- function(years) {
@@ -87,7 +87,7 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #' 
 #' @examples
-#' fars_summarize_years(years = c(1992,1993,1994))
+#' fars_summarize_years(years = c(2012,2013,2014))
 #' 
 #' @export
 fars_summarize_years <- function(years) {
@@ -115,7 +115,7 @@ fars_summarize_years <- function(years) {
 #' If wrong state code is given, then it will raise error
 #' 
 #' @examples
-#' fars_map_state(state.num = 12, year = 1994)
+#' fars_map_state(state.num = 12, year = 2014)
 #' 
 #' @export
 fars_map_state <- function(state.num, year) {
