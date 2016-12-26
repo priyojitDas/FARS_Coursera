@@ -18,7 +18,7 @@ This function creates a dataframe for a set of years, which can be modified in
 the code by changing \code{year}
 }
 \examples{
-fars_summarize_years(years = c(2012,2013,2014))
+fars_summarize_years(years = c(2013,2014,2015))
 
 }
 
