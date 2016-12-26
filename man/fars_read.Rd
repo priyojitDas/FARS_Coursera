@@ -17,8 +17,4 @@ This function reads data from a .csv file, where the name of the file is supplie
 the argument of the function
 If file does not exist in the current working directory, then the function will give error.
 }
-\examples{
-fars_read(filename = "accident_2014.csv.bz2")
-
-}
 
